@@ -1,0 +1,21 @@
+Package: SimpLinHoy
+Type: Package
+Title: Simple Linear Regression Model
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Dharma", "Hoy",
+      email = "dharma.hoy@colostate.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: This package takes an x and y vector of equal length,
+    throws an error if they are different length, and then fits
+    a simple linear regression model and outputs the fit parameters,
+    confidence intervals, residuals, standard errors, and predicted values 
+    as a list.
+License: There is no license.
+Imports: Rcpp (>= 1.1.0)
+LinkingTo: Rcpp, RcppArmadillo, knitr
+VignetteBuilder: knitr
+Suggests: knitr, rmarkdown

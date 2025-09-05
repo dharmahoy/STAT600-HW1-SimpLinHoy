@@ -1,0 +1,23 @@
+# Introduction
+
+Hello! Welcome to the package I have created for STAT600 HW1. This README outlines how to install this package. For more details on how to use this package please refer to the Vignette.
+
+# Install in R
+
+To install this package in your R console please run the following lines.
+
+```{r}
+# install.packages("devtools") # if not installed
+# devtools::install_github("dharmahoy/STAT600-HW1-SimpLin")
+```
+
+# Install with Folder Download
+
+To install this package via folder download, start by downloading the contents of this GitHub Repository to your local device. To build the package first insure that `devtools` is loaded.
+
+```{r}
+library(Rcpp)
+compileAttributes()
+```
+
+Finally, run `build()` and `install()` in your terminal.

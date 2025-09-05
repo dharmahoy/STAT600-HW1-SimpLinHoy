@@ -1,0 +1,51 @@
+---
+title: "SimpLin_Hoy"
+author: "Dharma Hoy"
+date: "2025-09-04"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to myRcppPackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+This Vignette gives an overview of the `SimpLinHoy` package. This primary functionality
+of this package is to fit a simple linear regression model to an input of two
+numeric vectors.
+
+# Install
+To install this package proceed with the following.
+```{r}
+# install.packages("devtools") # if not installed
+# devtools::install_github("dharmahoy/STAT600-HW1-SimpLinHoy")
+```
+
+# Typical Usecase
+When provided with the correct input type, the package will operate as follows.
+```{r}
+exampleX <- c(1,5,7,9,11,12,15)
+exampleY <- c(2,7,9,10,15,20,3)
+fitModel(exampleX, exampleY)
+```
+
+# Catching Errors
+If vectors of different lengths are provided the following error message 
+will be shown.
+```{r}
+exampleX <- c(1,5,7,9,11)
+exampleY <- c(2,7,9,10,15,20,3)
+fitModel(exampleX, exampleY)
+```
+
+If the vectors are not numeric the following error message will be shown.
+```{r}
+exampleX <- "foo"
+exampleY <- "bar"
+fitModel(exampleX, exampleY)
+```
+
