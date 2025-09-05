@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Introduction
-This Vignette gives an overview of the `SimpLinHoy` package. This primary functionality
+This Vignette gives an overview of the `SimpLin` package. This primary functionality
 of this package is to fit a simple linear regression model to an input of two
 numeric vectors.
 
