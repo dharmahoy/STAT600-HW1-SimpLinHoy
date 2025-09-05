@@ -13,7 +13,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // fitLin
 Rcpp:: List fitLin(arma::mat X, arma::vec Y);
-RcppExport SEXP _SimpLinHoy_fitLin(SEXP XSEXP, SEXP YSEXP) {
+RcppExport SEXP _SimpLin_fitLin(SEXP XSEXP, SEXP YSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -25,11 +25,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_SimpLinHoy_fitLin", (DL_FUNC) &_SimpLinHoy_fitLin, 2},
+    {"_SimpLin_fitLin", (DL_FUNC) &_SimpLin_fitLin, 2},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_SimpLinHoy(DllInfo *dll) {
+RcppExport void R_init_SimpLin(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

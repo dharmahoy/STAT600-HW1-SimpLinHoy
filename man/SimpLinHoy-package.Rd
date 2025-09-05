@@ -1,25 +1,25 @@
-\name{SimpLinHoy-package}
-\alias{SimpLinHoy-package}
-\alias{SimpLinHoy}
+\name{SimpLin-package}
+\alias{SimpLin-package}
+\alias{SimpLin}
 \docType{package}
 \title{
-\packageTitle{SimpLinHoy}
+\packageTitle{SimpLin}
 }
 \description{
-\packageDescription{SimpLinHoy}
+\packageDescription{SimpLin}
 }
 \details{
 
 The DESCRIPTION file:
-\packageDESCRIPTION{SimpLinHoy}
-\packageIndices{SimpLinHoy}
+\packageDESCRIPTION{SimpLin}
+\packageIndices{SimpLin}
 Use this package by entering in two numeric vectors, x and y, into the fitModel
 function. Then a simple linear regression will be fit to the input.
 }
 \author{
-\packageAuthor{SimpLinHoy}
+\packageAuthor{SimpLin}
 
-Maintainer: \packageMaintainer{SimpLinHoy}
+Maintainer: \packageMaintainer{SimpLin}
 }
 \examples{
 ## Here is an example of fitModel output when correct input is provided
