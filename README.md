@@ -8,7 +8,7 @@ To install this package in your R console please run the following lines.
 
 ```{r}
 # install.packages("devtools") # if not installed
-# devtools::install_github("dharmahoy/STAT600-HW1-SimpLin")
+# devtools::install_github("dharmahoy/STAT600-HW1-SimpLinHoy")
 ```
 
 # Install with Folder Download
@@ -17,7 +17,7 @@ To install this package via folder download, start by downloading the contents o
 
 ```{r}
 library(Rcpp)
-compileAttributes()
+compileAttributes() # add your file path in here
 ```
 
-Finally, run `build()` and `install()` in your terminal.
+Finally, run `build()` and `install()` in your terminal using the correct file paths.
