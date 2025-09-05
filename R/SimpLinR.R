@@ -16,13 +16,13 @@
 #' message displayed. If x and/or y are not numeric, execution will be stopped
 #' and an error message displayed.
 
-fitModel <- function(x, y){
+SimpLinR <- function(x, y){
   if(length(x) != length (y)){
     stop("x and y must be the same length")
   } else if(is.numeric(x) == FALSE | is.numeric(y) == FALSE){
     stop("x and y must be numeric")
   } else {
-    output <- fitLin(cbind(rep(1, length(x)), x), y)
+    output <- SimpLinCpp(cbind(rep(1, length(x)), x), y)
     output
   }
 

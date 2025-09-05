@@ -1,12 +1,12 @@
-\name{fitModel}
-\alias{fitModel}
-\title{fitModel}
+\name{SimpLinR}
+\alias{SimpLinR}
+\title{SimpLinR}
 \description{
-This function wraps the fitLin C++ function to check the datatypes and formatting
-of the users input before calling fitLin.
+This function wraps the SimpLinRcpp C++ function to check the datatypes and formatting
+of the users input before calling SimpLinRcpp.
 }
 \usage{
-fitModel(x,y)
+SimpLinR(x,y)
 }
 \arguments{
   \item{x}{
@@ -17,7 +17,7 @@ fitModel(x,y)
 }
 }
 \value{
-When ran this function outputs the LIST returned from the fitLin function.
+When ran this function outputs the LIST returned from the SimpLinRcpp function.
 This LIST includes the following values.
 \item{B0 }{Estimate of the intercept}
 \item{seB0 }{Standard error estimate for the intercept}
@@ -34,8 +34,8 @@ This LIST includes the following values.
 Dharma Hoy
 }
 \examples{
-## Here is an example of fitModel output when correct input is provided
+## Here is an example of SimpLinR output when correct input is provided
 exampleX <- c(1,5,7,9,11,12,15)
 exampleY <- c(2,7,9,10,15,20,3)
-fitModel(exampleX, exampleY)
+SimpLinR(exampleX, exampleY)
 }

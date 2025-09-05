@@ -11,11 +11,11 @@
 #' @param Y and arma::vec that contains the users input data
 #' @returns a list containing the estimates of B0 B1, their standard errors
 #' confidence intervals, residuals, and predicted values. This list is sent back
-#' to the R Wrapper function fitModel.
+#' to the R Wrapper function SimpLinR.
 #' @export
 NULL
 
-fitLin <- function(X, Y) {
-    .Call(`_SimpLin_fitLin`, X, Y)
+SimpLinCpp <- function(X, Y) {
+    .Call(`_SimpLin_SimpLinCpp`, X, Y)
 }
 

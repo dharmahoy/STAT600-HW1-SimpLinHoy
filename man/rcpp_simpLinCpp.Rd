@@ -1,13 +1,13 @@
-\name{fitLin.Rd}
-\alias{fitLin.Rd}
-\title{fitLin, Rcpp}
+\name{SimpLinCpp.Rd}
+\alias{SimpLinCpp.Rd}
+\title{SimpLinCpp, Rcpp}
 \description{
 This function runs the C++ code that fits the simple linear regression model,
 finds the B0 and B1 estimates, their standard errors, their confidence intervals,
 residuals, and predicted values.
 }
 \usage{
-fitLin.Rd(x,y)
+SimpLinCpp.Rd(x,y)
 }
 \arguments{
   \item{x}{
@@ -37,7 +37,7 @@ Dharma Hoy
 }
 \examples{
 ## This function should not be used without the use of its wrapper function
-## please see the documentation of fitModel for examples.
+## please see the documentation of SimpLinR for examples.
 }
 
 
