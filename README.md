@@ -1,6 +1,6 @@
 # Introduction
 
-Hello! Welcome to the package I have created for STAT600 HW1. This README outlines how to install this package. For more details on how to use this package please refer to the Vignette.
+Hello! Welcome to the package I have created for STAT600 HW1. This README outlines how to install this package and its typical use. For more details on how to use this package please refer to the Vignette.
 
 # Install in R
 
@@ -21,3 +21,11 @@ compileAttributes() # add your file path in here
 ```
 
 Finally, run `build()` and `install()` in your terminal using the correct file paths.
+
+# Typical Usecase
+When provided with the correct input type, the package will operate as follows.
+```{r}
+exampleX <- c(1,5,7,9,11,12,15)
+exampleY <- c(2,7,9,10,15,20,3)
+fitModel(exampleX, exampleY)
+```
