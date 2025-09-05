@@ -16,6 +16,6 @@
 NULL
 
 fitLin <- function(X, Y) {
-    .Call(`_SimpLinHoy_fitLin`, X, Y)
+    .Call(`_SimpLin_fitLin`, X, Y)
 }
 
