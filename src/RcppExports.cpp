@@ -11,21 +11,21 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
-// fitLin
-Rcpp:: List fitLin(arma::mat X, arma::vec Y);
-RcppExport SEXP _SimpLin_fitLin(SEXP XSEXP, SEXP YSEXP) {
+// SimpLinCpp
+Rcpp:: List SimpLinCpp(arma::mat X, arma::vec Y);
+RcppExport SEXP _SimpLin_SimpLinCpp(SEXP XSEXP, SEXP YSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< arma::mat >::type X(XSEXP);
     Rcpp::traits::input_parameter< arma::vec >::type Y(YSEXP);
-    rcpp_result_gen = Rcpp::wrap(fitLin(X, Y));
+    rcpp_result_gen = Rcpp::wrap(SimpLinCpp(X, Y));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_SimpLin_fitLin", (DL_FUNC) &_SimpLin_fitLin, 2},
+    {"_SimpLin_SimpLinCpp", (DL_FUNC) &_SimpLin_SimpLinCpp, 2},
     {NULL, NULL, 0}
 };
 

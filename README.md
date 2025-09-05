@@ -27,5 +27,5 @@ When provided with the correct input type, the package will operate as follows.
 ```{r}
 exampleX <- c(1,5,7,9,11,12,15)
 exampleY <- c(2,7,9,10,15,20,3)
-fitModel(exampleX, exampleY)
+SimpLinR(exampleX, exampleY)
 ```
