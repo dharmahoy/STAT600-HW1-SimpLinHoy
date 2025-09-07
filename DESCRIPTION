@@ -16,6 +16,8 @@ Description: This package takes an x and y vector of equal length,
     as a list.
 License: There is no license.
 Imports: Rcpp (>= 1.1.0)
-LinkingTo: Rcpp, RcppArmadillo, knitr
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: 
+    knitr,
+    rmarkdown
 VignetteBuilder: knitr
-Suggests: knitr, rmarkdown
