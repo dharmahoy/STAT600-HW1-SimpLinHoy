@@ -1,16 +1,17 @@
 ---
-title: "SimpLin_Hoy"
-author: "Dharma Hoy"
-date: "2025-09-04"
+title: "SimpLin-vignette"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to myRcppPackage}
+  %\VignetteIndexEntry{SimpLin-vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
 ```
 
 # Introduction
@@ -20,9 +21,10 @@ numeric vectors.
 
 # Install
 To install this package proceed with the following.
-```{r}
+```{r setup}
 # install.packages("devtools") # if not installed
 # devtools::install_github("dharmahoy/STAT600-HW1-SimpLinHoy")
+library(SimpLin)
 ```
 
 # Typical Usecase
@@ -34,18 +36,18 @@ SimpLinR(exampleX, exampleY)
 ```
 
 # Catching Errors
-If vectors of different lengths are provided the following error message 
-will be shown.
+If vectors of different lengths are provided an error message will be shown
+and execution will be stopped.
 ```{r}
 exampleX <- c(1,5,7,9,11)
 exampleY <- c(2,7,9,10,15,20,3)
-simpLinR(exampleX, exampleY)
+# SimpLinR(exampleX, exampleY) # run this example to see error message
 ```
 
-If the vectors are not numeric the following error message will be shown.
+If the vectors are not numeric an error message will be shown and execution 
+will be stopped.
 ```{r}
 exampleX <- "foo"
 exampleY <- "bar"
-simpLinR(exampleX, exampleY)
+# SimpLinR(exampleX, exampleY) # run this example to see error message
 ```
-
